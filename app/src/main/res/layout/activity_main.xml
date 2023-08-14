@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="@string/message"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/message_ed"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/message_ed"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/message_ed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="@string/message_hint"
+        android:minHeight="48dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/phone"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/phone_ed"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/phone_ed"
+        app:layout_constraintTop_toBottomOf="@+id/message_ed" />
+
+    <EditText
+        android:id="@+id/phone_ed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="@string/phone_hint"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message_ed" />
+
+    <Button
+        android:id="@+id/shared_pref_retrieve"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#8E24AA"
+        android:text="@string/sh_pref_retrieve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_ed" />
+
+    <Button
+        android:id="@+id/shared_pref_save"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#8E24AA"
+        android:text="@string/shared_pref_save"
+        app:layout_constraintEnd_toStartOf="@+id/shared_pref_retrieve"
+        app:layout_constraintTop_toBottomOf="@+id/phone_ed" />
+
+    <Button
+        android:id="@+id/F_retrieve"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/F_retrieve"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shared_pref_retrieve"
+        app:layout_constraintVertical_bias="0.25"
+        android:backgroundTint="#C253DF"/>
+
+    <Button
+        android:id="@+id/F_save"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:text="@string/F_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shared_pref_save"
+        app:layout_constraintVertical_bias="0.252"
+        android:backgroundTint="#C253DF" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

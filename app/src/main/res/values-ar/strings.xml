@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">حفظ واسترجاع البيانات</string>
+    <string name="message" translatable="false">الرسالة</string>
+    <string name="message_hint" translatable="false">ادخل الرسالة</string>
+    <string name="phone" translatable="false">رقم الهاتف</string>
+    <string name="phone_hint" translatable="false">ادخل رقم الهاتف</string>
+    <string name="sh_pref_save" translatable="false">حفظ</string>
+    <string name="shared_pref_save" translatable="false">حفظ</string>
+    <string name="sh_pref_retrieve" translatable="false">استرجاع</string>
+    <string name="F_save" translatable="false">حفظ داخل الملف</string>
+    <string name="F_retrieve" translatable="false">استرجاع من الملف</string>
+</resources>
